@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.RegistroLogin"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:background="@drawable/fondologin">
+
+
+    <RelativeLayout
+        android:id="@+id/name_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="@dimen/ancho_imgRegistro"
+            android:layout_height="@dimen/alto_imgRegistro"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/ic_logo_user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_alignTop="@id/imagen"
+            android:layout_alignBottom="@id/imagen"
+            android:layout_toStartOf="@id/imagen">
+
+
+            <EditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Editext_login"
+                android:layout_marginBottom="20dp"
+                android:inputType="textPersonName"
+                android:hint="Nombre" />
+
+            <EditText
+                android:id="@+id/usuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/Editext_login"
+                android:inputType="textPersonName"
+                android:hint="Usuario" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_image_layout"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/Editext_login"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Edad"
+            android:textSize="@dimen/Editext_login"
+            android:ems="10"
+            android:inputType="number"
+            />
+
+
+        <EditText
+            android:id="@+id/ciudad"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/Editext_login"
+            android:hint="Ciudad"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorEdittextLogin"
+        android:text="@string/button_RegistroLogi"
+        android:textSize="@dimen/Editext_login"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

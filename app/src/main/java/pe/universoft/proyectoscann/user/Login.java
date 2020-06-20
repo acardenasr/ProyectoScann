@@ -15,16 +15,12 @@ import pe.universoft.proyectoscann.R;
 
 public class Login extends AppCompatActivity {
 
-    public static final String USUARIO= "usuario";
-    public static final String PASSWORD = "password";
+    public static final String USUARIO_REGISTRADO_KEY= "usuarioRegistrado";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
         final EditText usuario = findViewById(R.id.eusuario);
         final EditText password = findViewById(R.id.epassword);
 
@@ -37,8 +33,7 @@ public class Login extends AppCompatActivity {
                 Intent enviar = new Intent(Login.this, MainActivity.class);
                 final UsuarioLogin user = new UsuarioLogin(usuario.getText().toString(),password.getText().toString());
 
-                enviar.putExtra(USUARIO,user.getUsuario());
-                enviar.putExtra(PASSWORD,user.getPassword());
+                enviar.putExtra(USUARIO_REGISTRADO_KEY,user);
 
                 startActivity(enviar);
 
