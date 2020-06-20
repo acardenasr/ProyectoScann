@@ -4,53 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
+    tools:context=".user.Login"
     android:orientation="vertical"
-    android:layout_marginLeft="16dp"
-    android:layout_marginTop="16dp"
-    android:layout_marginBottom="16dp"
-    android:layout_marginRight="16dp"
+    android:background="@drawable/fondologin"
 
     >
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
-
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+
+       >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/ancho_img"
+        android:layout_height="@dimen/alto_img"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/ic_logo_user" />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:id="@+id/eusuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:textSize="@dimen/Editext_login"
+        android:ems="10"
+        android:textColor="@color/colorEdittextLogin"
+        android:inputType="textPersonName"
+        android:hint="@string/user_login"
+        android:textColorHint="@color/colorEdittextLogin"/>
 
+    <EditText
+        android:id="@+id/epassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:textColor="@color/colorEdittextLogin"
+        android:textSize="@dimen/Editext_login"
+        android:hint="@string/passwoar_login"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorEdittextLogin"/>
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="siguiente" />
+    <Button
+        android:id="@+id/botonLogeo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/Editext_login"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_login"
+        android:background="@color/colorEdittextLogin"/>
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="final" />
+    <TextView
+        android:id="@+id/trecuperarPas"
+        android:layout_width="match_parent"
+        android:ems="10"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/buttonRecuperarPass"
+        android:textColor="@color/colorEdittextLogin"
+        />
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="siguiente" />
-    </LinearLayout>
-
-
-
-
-
-
+</LinearLayout>
 </LinearLayout>

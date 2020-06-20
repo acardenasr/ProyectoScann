@@ -14,7 +14,7 @@
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
-            android:name=".Login"
+            android:name=".user.Login"
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
