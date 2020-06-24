@@ -34,10 +34,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="@dimen/Editext_login"
-        android:ems="10"
         android:textColor="@color/colorEdittextLogin"
         android:inputType="textPersonName"
         android:hint="@string/user_login"
+        android:padding="15dp"
+        android:background="@drawable/fondotext"
+        android:drawablePadding="10dp"
         android:textColorHint="@color/colorEdittextLogin"/>
 
     <EditText
@@ -45,11 +47,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:ems="10"
         android:textColor="@color/colorEdittextLogin"
         android:textSize="@dimen/Editext_login"
         android:hint="@string/passwoar_login"
         android:inputType="textPassword"
+        android:padding="15dp"
+        android:background="@drawable/fondotext"
+        android:drawablePadding="10dp"
         android:textColorHint="@color/colorEdittextLogin"/>
 
     <Button
@@ -59,7 +63,8 @@
         android:textSize="@dimen/Editext_login"
         android:layout_marginTop="16dp"
         android:text="@string/button_login"
-        android:background="@color/colorEdittextLogin"/>
+        android:padding="15dp"
+        android:background="@drawable/fonfoboton"/>
 
     <TextView
         android:id="@+id/trecuperarPas"
@@ -69,7 +74,8 @@
         android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:text="@string/buttonRecuperarPass"
-        android:textColor="@color/colorEdittextLogin"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
         />
 
 </LinearLayout>

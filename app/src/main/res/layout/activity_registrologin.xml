@@ -41,7 +41,11 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/Editext_login"
                 android:layout_marginBottom="20dp"
+                android:textColor="@color/colorEdittextLogin"
                 android:inputType="textPersonName"
+                android:background="@drawable/fondotext"
+                android:padding="15dp"
+                android:textColorHint="@color/colorEdittextLogin"
                 android:hint="Nombre" />
 
             <EditText
@@ -51,6 +55,9 @@
                 android:layout_marginBottom="20dp"
                 android:textSize="@dimen/Editext_login"
                 android:inputType="textPersonName"
+                android:background="@drawable/fondotext"
+                android:padding="15dp"
+                android:textColorHint="@color/colorEdittextLogin"
                 android:hint="Usuario" />
         </LinearLayout>
 
@@ -67,9 +74,12 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
+
             android:textSize="@dimen/Editext_login"
             android:ems="10"
+            android:background="@drawable/fondotext"
+            android:padding="15dp"
+            android:textColorHint="@color/colorEdittextLogin"
             android:hint="Password"
             android:inputType="textPassword"
             />
@@ -78,10 +88,13 @@
             android:id="@+id/edad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="15dp"
             android:hint="Edad"
             android:textSize="@dimen/Editext_login"
             android:ems="10"
+            android:background="@drawable/fondotext"
+            android:padding="15dp"
+            android:textColorHint="@color/colorEdittextLogin"
             android:inputType="number"
             />
 
@@ -93,21 +106,25 @@
             android:layout_height="wrap_content"
             android:textSize="@dimen/Editext_login"
             android:hint="Ciudad"
+            android:layout_marginTop="15dp"
             android:ems="10"
+            android:background="@drawable/fondotext"
+            android:padding="15dp"
+            android:textColorHint="@color/colorEdittextLogin"
             android:inputType="textPersonName"
             />
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@drawable/fonfoboton"
+            android:text="@string/button_RegistroLogi"
+            android:textSize="@dimen/Editext_login" />
+
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorEdittextLogin"
-        android:text="@string/button_RegistroLogi"
-        android:textSize="@dimen/Editext_login"
-        android:layout_alignParentBottom="true"/>
-
 
 
 </RelativeLayout>
