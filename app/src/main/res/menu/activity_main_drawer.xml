@@ -5,16 +5,25 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:id="@+id/nav_userinfo"
+            android:icon="@drawable/ic_user_informacion_24"
+            android:title="@string/menu_userinfo" />
+
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:id="@+id/nav_protocolos"
+            android:icon="@drawable/ic_baseline_accessible_24"
+            android:title="@string/menu_protocolosdesuridad" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_centrosalud"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="@string/menu_centrosalud" />
+        <item
+            android:id="@+id/nav_detalleapp"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_detallesdelapp" />
+        <item
+            android:id="@+id/nav_cerrarsecion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_cerrarsesion" />
     </group>
 </menu>
