@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.Login"
+    tools:context=".Login"
     android:orientation="vertical"
     android:background="@drawable/fondologin"
 
@@ -64,7 +64,8 @@
         android:layout_marginTop="16dp"
         android:text="@string/button_login"
         android:padding="15dp"
-        android:background="@drawable/fonfoboton"/>
+        android:background="@drawable/fonfoboton">
+    </Button>
 
     <TextView
         android:id="@+id/trecuperarPas"
@@ -78,5 +79,16 @@
         android:textColor="@color/colorWhite"
         />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/textViewRegistar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registar Usuario"
+            android:ems="10"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/colorWhite"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
 </LinearLayout>

@@ -1,4 +1,4 @@
-package pe.universoft.proyectoscann.user;
+package pe.universoft.proyectoscann;
 
 import androidx.appcompat.app.AppCompatActivity;
 import pe.universoft.proyectoscann.R;

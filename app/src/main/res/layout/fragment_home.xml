@@ -5,28 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
-    <LinearLayout
+
+    <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="40dp"
-        android:orientation="horizontal"
-        android:background="#2B2B2B"
-        >
+        android:background="#2B2B2B">
+
+
 
         <ImageView
             android:layout_width="70dp"
             android:layout_height="60dp"
 
-            android:layout_gravity="bottom"
             android:background="@drawable/fondoredondo"
             android:padding="10dp"
-            android:layout_marginLeft="130dp"
-            android:layout_marginBottom="10dp"
-            android:src="@drawable/ic_baseline_camera_alt_24">
+            android:src="@drawable/ic_baseline_camera_alt_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.972">
 
         </ImageView>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
