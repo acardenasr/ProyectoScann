@@ -10,7 +10,7 @@
             android:title="@string/menu_userinfo" />
 
         <item
-            android:id="@+id/nav_protocolos"
+            android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_baseline_accessible_24"
             android:title="@string/menu_protocolosdesuridad" />
         <item
