@@ -2,7 +2,7 @@ package pe.universoft.proyectoscann.user;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-public class UsuarioLogin implements Parcelable {
+public class UsuarioLogin /*implements Parcelable*/ {
 
     private String usuario;
     private String password;
@@ -27,7 +27,7 @@ public class UsuarioLogin implements Parcelable {
     public void setPassword(String password) {
         this.password = password;
     }
-
+/*
     protected UsuarioLogin(Parcel in) {
         usuario = in.readString();
         password = in.readString();
@@ -55,5 +55,5 @@ public class UsuarioLogin implements Parcelable {
         public UsuarioLogin[] newArray(int size) {
             return new UsuarioLogin[size];
         }
-    };
+    };*/
 }
