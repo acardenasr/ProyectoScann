@@ -20,7 +20,7 @@
     <string name="menu_userinfo">Informacion General</string>
     <string name="menu_protocolosdesuridad">Protocolos de Primeros Auxilios</string>
     <string name="menu_centrosalud">Centro de Salud</string>
-    <string name="menu_detallesdelapp">Detalles de App</string>
+    <string name="Info_cobit">Info Cobit-19</string>
     <string name="menu_cerrarsesion">Cerrar Sesion</string>
     <string name="user_login">Usuario</string>
     <string name="passwoar_login">****************</string>

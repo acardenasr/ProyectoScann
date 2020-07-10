@@ -12,7 +12,7 @@ public class RegistroLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrologin);
 
-        EditText nom = findViewById(R.id.nombre);
-        EditText ape = findViewById(R.id.usuario);
+      //  EditText nom = findViewById(R.id.nombre);
+        //EditText ape = findViewById(R.id.usuario);
     }
 }

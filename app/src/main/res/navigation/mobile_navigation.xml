@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="pe.universoft.proyectoscann.ui.gallery.GalleryFragment"
-        android:label="gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:name="pe.universoft.proyectoscann.ui.gallery.Covit19Fragment"
+        android:label="Covit-19 Resumen de casos"
+        tools:layout="@layout/fragment_covit19" />
 
     <fragment
         android:id="@+id/nav_slideshow"
