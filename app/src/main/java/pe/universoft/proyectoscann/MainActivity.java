@@ -107,6 +107,8 @@ public class MainActivity extends Activity implements View.OnTouchListener, Came
         int cols = mRgba.cols();
         int rows = mRgba.rows();
 
+
+        
         int xOffset = (mOpenCvCameraView.getWidth() - cols) / 2;
         int yOffset = (mOpenCvCameraView.getHeight() - rows) / 2;
 
