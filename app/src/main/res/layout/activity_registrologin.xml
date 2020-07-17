@@ -1,130 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegistroLogin"
-    android:paddingRight="16dp"
-    android:paddingBottom="16dp"
+    android:background="@color/colorPrimary"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
-    android:background="@drawable/fondologin">
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".RegistroLogin">
 
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="286dp"
+        android:layout_height="185dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_scannsos" />
 
-    <RelativeLayout
-        android:id="@+id/name_image_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <ImageView
-            android:id="@+id/imagen"
-            android:layout_width="@dimen/ancho_imgRegistro"
-            android:layout_height="@dimen/alto_imgRegistro"
-            android:layout_alignParentEnd="true"
-            app:srcCompat="@drawable/ic_logo_user" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="vertical"
-            android:layout_alignTop="@id/imagen"
-            android:layout_alignBottom="@id/imagen"
-            android:layout_toStartOf="@id/imagen">
-
-
-            <EditText
-                android:id="@+id/nombre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/Editext_login"
-                android:layout_marginBottom="20dp"
-                android:textColor="@color/colorEdittextLogin"
-                android:inputType="textPersonName"
-                android:background="@drawable/fondotext"
-                android:padding="15dp"
-                android:textColorHint="@color/colorEdittextLogin"
-                android:hint="Nombre" />
-
-            <EditText
-                android:id="@+id/usuario"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:textSize="@dimen/Editext_login"
-                android:inputType="textPersonName"
-                android:background="@drawable/fondotext"
-                android:padding="15dp"
-                android:textColorHint="@color/colorEdittextLogin"
-                android:hint="Usuario" />
-        </LinearLayout>
-
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="REGISTRO"
+        android:textColor="@color/colorWhite"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/name_image_layout"
-        android:orientation="vertical">
+        android:layout_marginBottom="76dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.605">
 
         <EditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:textSize="@dimen/Editext_login"
-            android:ems="10"
             android:background="@drawable/fondotext"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textWebEmailAddress"
             android:padding="15dp"
-            android:textColorHint="@color/colorEdittextLogin"
-            android:hint="Password"
-            android:inputType="textPassword"
-            />
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/Editext_login" />
 
         <EditText
             android:id="@+id/edad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:hint="Edad"
-            android:textSize="@dimen/Editext_login"
-            android:ems="10"
             android:background="@drawable/fondotext"
+            android:drawableLeft="@drawable/ic_baseline_person_registro"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName"
             android:padding="15dp"
-            android:textColorHint="@color/colorEdittextLogin"
-            android:inputType="number"
-            />
+            android:textColorHint="@color/colorWhite"
+            android:textSize="@dimen/Editext_login" />
 
 
         <EditText
             android:id="@+id/ciudad"
             android:layout_width="match_parent"
-            android:layout_marginBottom="20dp"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/Editext_login"
-            android:hint="Ciudad"
             android:layout_marginTop="15dp"
-            android:ems="10"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/fondotext"
+            android:drawableLeft="@drawable/ic_baseline_vpn_key_registro"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="contraseña"
+            android:inputType="textPassword"
             android:padding="15dp"
-            android:textColorHint="@color/colorEdittextLogin"
-            android:inputType="textPersonName"
-            />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:padding="15dp"
-            android:background="@drawable/fonfoboton"
-            android:text="@string/button_RegistroLogi"
+            android:textColorHint="@color/colorWhite"
             android:textSize="@dimen/Editext_login" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/fonfoboton"
+                android:padding="15dp"
+                android:text="@string/button_RegistroLogi"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/Editext_login" />
+
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fondotext"
+                android:padding="15dp"
+
+                android:text="CANCELAR"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/Editext_login" />
+        </LinearLayout>
 
     </LinearLayout>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

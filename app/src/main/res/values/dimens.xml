@@ -6,7 +6,7 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">226dp</dimen>
     <dimen name="ancho_img">250dp</dimen>
-    <dimen name="alto_img">250dp</dimen>
+    <dimen name="alto_img">200dp</dimen>
     <dimen name="ancho_imgRegistro">200dp</dimen>
     <dimen name="alto_imgRegistro">200dp</dimen>
     <dimen name="Editext_login">20dp</dimen>

@@ -10,7 +10,7 @@
             android:title="@string/menu_userinfo" />
 
         <item
-            android:id="@+id/nav_protocolos"
+            android:id="@+id/nav_detalleapp"
             android:icon="@drawable/ic_baseline_accessible_24"
             android:title="@string/menu_protocolosdesuridad" />
         <item
@@ -18,9 +18,9 @@
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_centrosalud" />
         <item
-            android:id="@+id/nav_detalleapp"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_detallesdelapp" />
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_virus"
+            android:title="@string/Info_cobit" />
         <item
             android:id="@+id/nav_cerrarsecion"
             android:icon="@drawable/ic_menu_slideshow"
