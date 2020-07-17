@@ -11,7 +11,6 @@ public class RegistroLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrologin);
-
       //  EditText nom = findViewById(R.id.nombre);
         //EditText ape = findViewById(R.id.usuario);
     }

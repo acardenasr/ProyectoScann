@@ -49,7 +49,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(Login.this,"Registra tus datos",Toast.LENGTH_LONG).show();
-                Intent intent=new Intent(Login.this,RegistroLogin.class);
+                Intent intent=new Intent(Login.this,MainActivity.class);
                 startActivity(intent);
             }
         });
